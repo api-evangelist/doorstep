@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.doorstep.ai/iOS/using
+docs: https://docs.doorstep.ai/
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - sdk-configuration
+  token_format: JWT
+  oauth2_flows: []
+  note: >-
+    Doorstep exposes a client-side mobile tracking SDK (Dropoff SDK), not a public
+    REST API. Authentication is a single API key (a JWT) provisioned by Doorstep and
+    set programmatically in the SDK before tracking begins. There is no OpenAPI spec,
+    OAuth flow, or documented scope surface.
+schemes:
+- name: apiKey
+  type: apiKey
+  format: JWT
+  configured_via: DoorstepAI.setApiKey(key:)
+  platform_examples:
+  - platform: ios
+    call: 'DoorstepAI.setApiKey(key: "<JWT>")'
+  - platform: android
+    call: 'DoorstepAI.setAPIKey("your_api_key_here")'
+  guidance: >-
+    Store API keys securely using environment variables or a secure configuration
+    service; never hardcode API keys in production builds. Invalid keys surface as
+    errors on the async initialization/start calls (wrap in do/catch).
