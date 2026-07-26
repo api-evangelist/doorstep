@@ -1,0 +1,54 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.doorstep.ai/iOS/using
+docs: https://docs.doorstep.ai/
+summary: >-
+  Cross-cutting conventions for the Doorstep Dropoff SDK — a client-side mobile
+  tracking library (React Native, Flutter, Capacitor, iOS, Android), not a REST API.
+  Integration is a fixed four-touchpoint lifecycle keyed on a caller-supplied
+  deliveryId.
+authentication:
+  style: api-key
+  detail: JWT API key set via setApiKey/setAPIKey before tracking. See authentication/doorstep-authentication.yml
+lifecycle:
+  model: four-touchpoint delivery session
+  touchpoints:
+  - init: Set API key at app launch (setApiKey), optionally requestAllPermissions
+  - start: Begin tracking when entering a >=250m geofence around the destination
+  - mark: Capture drop-off (markDropoff) or custom events (newEvent) during delivery
+  - stop: End the session on geofence exit (stopDelivery)
+  start_variants:
+  - startDeliveryByPlaceID(placeID, deliveryId)
+  - startDeliveryByAddressType(address, deliveryId)
+  - startDeliveryByAddressString(address, deliveryId, coordinates, timeoutSeconds)
+  start_optional_params:
+  - timeoutSeconds
+  - autoStopAfterDropoffSeconds
+  - customerId
+  - driverId
+identifiers:
+  delivery_id:
+    field: deliveryId
+    role: caller-supplied delivery correlation key threaded through start/mark/stop
+  dropoff_type:
+    field: dropoffType
+    values: [pod, non_pod]
+idempotency:
+  supported: false
+  note: >-
+    deliveryId correlates the events of a single delivery session but Doorstep
+    documents no retry/idempotency-key contract; not emitting an Idempotency pointer.
+permissions:
+  required: [location (background/when-in-use), motion]
+  handling: requestAllPermissions() up front; runtime permission handling per platform
+error_handling:
+  style: language-native
+  detail: >-
+    Async SDK calls throw/reject on invalid key, denied permissions, or bad input;
+    wrap in do/catch (Swift) or equivalent try/catch per platform.
+events:
+  custom: newEvent(eventName, deliveryId)
+cross_links:
+  authentication: authentication/doorstep-authentication.yml
+  packages: packages/doorstep-packages.yml
+  lifecycle: lifecycle/doorstep-lifecycle.yml

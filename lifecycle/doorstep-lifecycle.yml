@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  npm/pub.dev package versions and docs.doorstep.ai; searched for status page,
+  deprecation policy, and SLA
+versioning:
+  scheme: semver-per-package
+  detail: >-
+    The Dropoff SDK is versioned independently per platform package (React Native
+    2.1.0, Flutter 2.0.7, Android 2.0.0, Capacitor 1.0.3). No single API version
+    string; there is no public REST API surface to version.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No published deprecation policy or Sunset/Deprecation header support (SDK, not HTTP API).
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+status_page_note: No status page found (https://status.doorstep.ai not resolvable at probe time).
+deprecated_operations: []

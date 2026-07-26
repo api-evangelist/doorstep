@@ -1,0 +1,55 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  npm registry, pub.dev, docs.doorstep.ai install guides, and the doorstep-ai
+  GitHub organization
+packages:
+- language: javascript
+  platform: react-native
+  registry: npm
+  name: "@doorstepai/dropoff-sdk"
+  version: 2.1.0
+  url: https://www.npmjs.com/package/@doorstepai/dropoff-sdk
+  install: npm install @doorstepai/dropoff-sdk
+  repository: https://github.com/doorstep-ai/DoorstepAIDropoffReactNativeSDK
+  description: doorstep.ai Dropoff SDK for React Native
+  official: true
+- language: javascript
+  platform: capacitor
+  registry: npm
+  name: "@doorstepai/dropoff-sdk-capacitor"
+  version: 1.0.3
+  url: https://www.npmjs.com/package/@doorstepai/dropoff-sdk-capacitor
+  install: npm install @doorstepai/dropoff-sdk-capacitor
+  repository: https://gitlab.com/doorstepai/tracking/sdk/capacitor
+  description: Capacitor plugin for DoorstepAI's Dropoff SDK (Angular, React, Vue, Next.js)
+  official: true
+- language: dart
+  platform: flutter
+  registry: pub.dev
+  name: doorstepai_dropoff_sdk
+  version: 2.0.7
+  url: https://pub.dev/packages/doorstepai_dropoff_sdk
+  install: flutter pub add doorstepai_dropoff_sdk
+  repository: https://github.com/doorstep-ai/DoorstepAIDropoffSDKFlutter
+  description: Dropoff SDK for Flutter
+  official: true
+- language: swift
+  platform: ios
+  registry: swift-package-manager
+  name: DoorstepDropoffSDK
+  url: https://github.com/doorstep-ai/DoorstepDropoffSDKPackage
+  install: "Xcode > File > Add Package Dependencies > https://github.com/doorstep-ai/DoorstepDropoffSDKPackage"
+  import: import DoorstepDropoffSDK
+  repository: https://github.com/doorstep-ai/DoorstepDropoffSDKPackage
+  description: SDK for doorstep.ai's Dropoff product; integrates into iOS apps with a few tracking methods
+  official: true
+- language: kotlin
+  platform: android
+  registry: maven
+  name: "ai.doorstep.com:doorstepai-dropoff-sdk"
+  version: 2.0.0
+  install: "implementation 'ai.doorstep.com:doorstepai-dropoff-sdk:2.0.0'"
+  docs: https://docs.doorstep.ai/Android/install
+  description: Dropoff SDK for native Android (Gradle dependency)
+  official: true

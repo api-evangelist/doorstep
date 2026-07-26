@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on doorstep.ai hosts
+hosts:
+- host: https://www.doorstep.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /sitemap.xml
+    status: 404
+- host: https://docs.doorstep.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /sitemap.xml
+    status: 200
+    note: Docusaurus-generated sitemap (docs pages), not a machine-readable API catalog
+result: >-
+  No /.well-known/ discovery documents (security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog, ai-plugin.json) were published on either
+  host as of the probe date. No WellKnown or SecurityTxt pointer emitted (nothing found).

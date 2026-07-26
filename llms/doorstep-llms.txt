@@ -1,0 +1,34 @@
+# Doorstep
+
+> Doorstep (doorstep.ai) is an indoor precision-tracking platform for last-mile delivery. Its patent-pending Dropoff SDK runs on a delivery driver's smartphone and uses sensor fusion to detect delivery events indoors — parking, building entrance, floor, and the final doorstep — even in GPS-degraded environments. Doorstep raised an $8M seed round led by Canaan Partners (September 2025) and is live across most U.S. states.
+
+Doorstep is a client-side mobile SDK, not a public REST API. Integration is a four-touchpoint lifecycle: set the API key (a JWT), request permissions, start delivery tracking, mark the drop-off, and stop tracking. The SDK ships for React Native, Flutter, Capacitor, native iOS, and native Android.
+
+## Docs
+- [Documentation home](https://docs.doorstep.ai/): Dropoff SDK docs across all platforms
+- [iOS install](https://docs.doorstep.ai/iOS/install): Swift Package Manager setup
+- [iOS usage](https://docs.doorstep.ai/iOS/using): SDK methods and lifecycle
+- [Android install](https://docs.doorstep.ai/Android/install): Gradle dependency
+- [React Native install](https://docs.doorstep.ai/ReactNative/install)
+- [Flutter install](https://docs.doorstep.ai/Flutter/install)
+- [Capacitor install](https://docs.doorstep.ai/Capacitor/install)
+
+## SDKs / Packages
+- [@doorstepai/dropoff-sdk (npm, React Native)](https://www.npmjs.com/package/@doorstepai/dropoff-sdk)
+- [@doorstepai/dropoff-sdk-capacitor (npm, Capacitor)](https://www.npmjs.com/package/@doorstepai/dropoff-sdk-capacitor)
+- [doorstepai_dropoff_sdk (pub.dev, Flutter)](https://pub.dev/packages/doorstepai_dropoff_sdk)
+- [DoorstepDropoffSDKPackage (Swift Package Manager, iOS)](https://github.com/doorstep-ai/DoorstepDropoffSDKPackage)
+- Android: `implementation 'ai.doorstep.com:doorstepai-dropoff-sdk:2.0.0'`
+
+## Repositories
+- [GitHub organization](https://github.com/doorstep-ai)
+- [React Native SDK](https://github.com/doorstep-ai/DoorstepAIDropoffReactNativeSDK)
+- [Flutter SDK](https://github.com/doorstep-ai/DoorstepAIDropoffSDKFlutter)
+- [iOS SDK package](https://github.com/doorstep-ai/DoorstepDropoffSDKPackage)
+
+## Company
+- [Website](https://www.doorstep.ai)
+- [Terms of Service](https://www.doorstep.ai/terms)
+- [Privacy Policy](https://www.doorstep.ai/privacy)
+- [Careers](https://www.doorstep.ai/careers)
+- Support: support@doorstep.ai
