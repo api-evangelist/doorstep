@@ -15,6 +15,17 @@ description: >-
   set the API key, request permissions, start delivery tracking, mark the drop-off,
   and stop tracking. Doorstep raised an $8M seed round led by Canaan Partners in
   September 2025 and its system is live across most U.S. states.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
