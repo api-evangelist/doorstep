@@ -50,7 +50,20 @@ x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-25
 tags:
+- Company
+- Delivery
+- Last Mile Delivery
+- Indoor Positioning
+- Location Tracking
+- Mobile SDK
+- Delivery Tracking
+- Fraud Prevention
+- Proof of Delivery
+tags_raw:
 - Company
 - Delivery
 - Last-Mile Logistics
